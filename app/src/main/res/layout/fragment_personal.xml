@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F4F4F4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/persoanl_photo_background" />
+
+
+
+    <include layout="@layout/personal_experience_item"/>
+    <include layout="@layout/personal_dou_item"/>
+    <include layout="@layout/personal_order_item"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="22dip"
+        android:background="#F4F4F4"
+        />
+
+    <include layout="@layout/personal_xcode_item"/>
+    <include layout="@layout/personal_strategy_item"/>
+    <include layout="@layout/personal_retroaction_item"/>
+    <include layout="@layout/personal_customer_service_item"/>
+
+</LinearLayout>

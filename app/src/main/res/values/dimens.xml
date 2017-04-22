@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="personal_item_height">40dip</dimen>
+    <dimen name="personal_item_weight">16dp</dimen>
+
+    <!--头像距离top距离-->
+    <dimen name="persoal_height_1">100dip</dimen>
+    <!--个人页面字体-->
+    <dimen name="personal_item_text_1">14sp</dimen>
+    <dimen name="personal_item_text_2">10sp</dimen>
+
+</resources>

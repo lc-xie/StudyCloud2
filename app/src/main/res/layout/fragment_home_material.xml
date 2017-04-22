@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F4F4F4"
+    android:id="@+id/material_home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_final_exam"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:background="@drawable/background_material_home_final_exam">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+
+            >
+
+            <TextView
+                android:text="期末考试专区"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="70dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="精准到你的大学资料"
+                android:textSize="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="70dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:src="@drawable/final_exam_material"
+            android:id="@+id/final_exam_material"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/activity_level_exam"
+            android:layout_width="159dip"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="0dip"
+            android:background="@drawable/background_material_home_level_exam">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:src="@drawable/level_exam_material"/>
+            <TextView
+                android:text="资格考试"
+                android:textSize="12dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="四六级,计算机等级考试"
+                android:textSize="8dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_kaoyan_exam"
+            android:layout_width="159dip"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/background_material_home_kaoyan_exam">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/kaoyan_exam_material"/>
+            <TextView
+                android:text="考研专区"
+                android:textSize="12dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="精准的专业课资料"
+                android:textSize="8dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_xueba_works"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:background="@drawable/background_material_home_xueba_works">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+
+            >
+
+            <TextView
+                android:text="学霸专区"
+                android:textSize="12dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="70dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="实验报告,论文等供你参考"
+                android:textSize="8dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="70dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/xueba_works_material"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_other_material"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:background="@drawable/background_material_home_others">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+
+            >
+
+            <TextView
+                android:text="各路资料"
+                android:textSize="12dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="70dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="ppt模板,简历模板"
+                android:textSize="8dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="70dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/other_material"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/activity_seek_material"
+            android:layout_width="159dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_material_home_seek_button"
+            android:text="寻求资料"
+            android:textSize="12dp"
+            android:textColor="#16A7C9"
+            />
+
+        <Button
+            android:id="@+id/activity_share_material"
+            android:layout_width="159dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/background_material_home_share_button"
+            android:text="分享资料"
+            android:textSize="12dp"
+            android:textColor="#F36298"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

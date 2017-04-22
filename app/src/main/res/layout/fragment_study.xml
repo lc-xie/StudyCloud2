@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="46dip"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/pager1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#0EA9CC"
+            android:text="买下的资料"
+            android:textSize="15dip"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/pager2"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#0EA9CC"
+            android:text="看过的攻略"
+            android:textSize="15dip"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:id="@+id/cursor_study"
+        android:scaleType="matrix"
+        android:src="@drawable/a"/>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager_study"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

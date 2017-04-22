@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical"
+    tools:context="com.example.stephen.studycloud2.activity.study.StrategyShowActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <include layout="@layout/top_1"/>
+
+        <RelativeLayout
+            android:id="@+id/strategy_layout_1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/strategy_layout_1_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="这两个都可以设置边距这两个都可以设置边距"
+                android:textSize="20dip"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:maxLines="2"
+                android:layout_marginStart="40dip"
+                android:layout_marginEnd="40dip"
+                />
+            <ImageView
+               android:id="@+id/strategy_layout_1_write"
+               android:src="@drawable/write_strategy"
+               android:layout_width="40dip"
+               android:layout_height="40dip"
+                android:layout_marginEnd="10dip"
+                android:layout_alignParentEnd="true"
+               />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/strategy_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/strategy_layout_2_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#33A6C3"
+                android:text="author: stephen"/>
+
+            <TextView
+                android:id="@+id/strategy_layout_2_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#33A6C3"
+                android:layout_marginStart="15dip"
+                android:layout_marginEnd="15dip"
+                android:text="2016.2.3"/>
+
+            <TextView
+                android:id="@+id/strategy_layout_2_read_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#33A6C3"
+                android:text="339 reads"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/strategy_layout_3_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dip"
+            android:text="      软键盘的Enter键默认显示的是“完成”文本，我们知道按Enter建表示前置工作已经准备完毕了，要去什么什么啦。比如，在一个搜索中，我们输入要搜索的文本，然后按
+      Enter表示要去搜索了，但是默认的Enter键显示的是“完成”文本，看着不太合适，不符合搜索的语义，如果能显示“搜索”两个字或者显示一个表示搜索的图标多好。事实证明我们的想法是合理的，Android也为我们提供的这样的功能。通过设置android:imeOptions来改变默认的“完成”文本。这里举几个常用的常量值."/>
+
+        <LinearLayout
+            android:id="@+id/strategy_layout_4_comments"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dip"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="用户评论"
+                android:textColor="#33A6C3"
+                android:layout_marginStart="15dip"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="5dip"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dip"
+                android:background="#cecece"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+   <include layout="@layout/bottom_strategy_comment" />
+
+
+</LinearLayout>
