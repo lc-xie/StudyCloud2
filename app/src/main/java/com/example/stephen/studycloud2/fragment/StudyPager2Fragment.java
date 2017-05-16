@@ -65,7 +65,6 @@ public class StudyPager2Fragment extends Fragment {
 
        studyStrategyAdapter=new StudyStrategyAdapter(getContext(),
                 R.layout.list_item_study_strategy,strategyList);
-        listView=(ListView)view.findViewById(R.id.strategy_saw_study_list_view);
         listView.setAdapter(studyStrategyAdapter);
 
         return view;

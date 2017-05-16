@@ -5,14 +5,23 @@ package com.example.stephen.studycloud2.bean;
  */
 
 public class ExamPaper {
-    public static final int SUBJECT_MATH=1;
+  /*  public static final int SUBJECT_MATH=1;
     public static final int SUBJECT_CHINESE=2;
     public static final int SUBJECT_ENGLISH=3;
+*/
     private String subject;
     private String title;
     private double price;
     private String detail;
+    private int ammount;
 
+    public int getAmmount() {
+        return ammount;
+    }
+
+    public void setAmmount(int ammount) {
+        this.ammount = ammount;
+    }
     public String getSubject() {
         return subject;
     }

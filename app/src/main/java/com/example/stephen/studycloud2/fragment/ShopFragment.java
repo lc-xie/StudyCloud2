@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import com.example.stephen.studycloud2.R;
+import com.example.stephen.studycloud2.adapter.ShopAdapter;
 import com.example.stephen.studycloud2.adapter.StudyStrategyAdapter;
 import com.example.stephen.studycloud2.bean.ExamPaper;
 import com.example.stephen.studycloud2.bean.Strategy;
@@ -33,6 +34,7 @@ import java.util.List;
 public class ShopFragment extends Fragment {
     View view;
     private List<ExamPaper> paperList=new ArrayList<>();
+    private ShopAdapter shopAdapter;
     private ListView listView;
 
 
@@ -40,6 +42,10 @@ public class ShopFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view=inflater.inflate(R.layout.fragment_shop,container,false);
+        listView=(ListView)view.findViewById(R.id.list_view_shop);
+
+        shopAdapter=new ShopAdapter(getContext(),R.layout.list_item_shop_paper,paperList);
+        listView.setAdapter(shopAdapter);
 
         sendRequestWithOkHttp();
 
@@ -90,12 +96,13 @@ public class ShopFragment extends Fragment {
                 String title=jsonObject.optString("title");
                 int price=jsonObject.optInt("price");
                 String subject=jsonObject.getString("subject");
+                int ammount=jsonObject.getInt("ammount");
 
                 ExamPaper examPaper=new ExamPaper();
                 examPaper.setTitle(title);
                 examPaper.setPrice(price);
                 examPaper.setSubject(subject);
-
+                examPaper.setAmmount(ammount);
 
                 paperList.add(examPaper);
 
@@ -106,5 +113,9 @@ public class ShopFragment extends Fragment {
         }catch (Exception e){
             e.printStackTrace();
         }
+    }
+
+    public void changeAmmountofPaper(){
+
     }
 }
