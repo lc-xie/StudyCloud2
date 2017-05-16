@@ -11,8 +11,25 @@ public class Strategy {
     private String title;
     private String content;
     private String author;
-    private Date writedTime;
+    private String writedTime;
     private String mark;
+
+    public String getWritedTime() {
+        return writedTime;
+    }
+
+    public void setWritedTime(String writedTime) {
+        this.writedTime = writedTime;
+    }
+
+    public String getAuthor() {
+        return author;
+
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
 
     public int getReadtimes() {
         return readtimes;

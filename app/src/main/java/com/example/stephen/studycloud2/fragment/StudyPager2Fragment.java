@@ -80,7 +80,7 @@ public class StudyPager2Fragment extends Fragment {
                 HttpURLConnection connection =null;
                 BufferedReader reader=null;
                 try{
-                    URL url=new URL("http://guolin.tech/api/china");
+                    URL url=new URL("http://10.0.2.2/strategy.json");
                     connection=(HttpURLConnection)url.openConnection();
                     connection.setRequestMethod("GET");
                     connection.setConnectTimeout(10000);
@@ -113,13 +113,19 @@ public class StudyPager2Fragment extends Fragment {
             JSONArray jsonArray=new JSONArray(str);
             for(int i=0;i<jsonArray.length();i++){
                 JSONObject jsonObject=jsonArray.getJSONObject(i);
-                String title=jsonObject.optString("name");
-                int readTimes=jsonObject.optInt("id");
+                String title=jsonObject.optString("title");
+                int readTimes=jsonObject.optInt("readtimes");
+                String author=jsonObject.getString("author");
+                String time=jsonObject.getString("time");
 
                 Strategy strategy=new Strategy();
                 strategy.setTitle(title);
                 strategy.setReadtimes(readTimes);
+                strategy.setAuthor(author);
+                strategy.setWritedTime(time);
+
                 strategyList.add(strategy);
+
                 Log.d("StudyPager2","name : "+strategy.getTitle());
                 Log.d("StudyPager2","read times : "+String.valueOf(strategy.getReadtimes()));
 
