@@ -59,7 +59,7 @@ public class ShopFragment extends Fragment {
                 HttpURLConnection connection =null;
                 BufferedReader reader=null;
                 try{
-                    URL url=new URL("http://10.0.2.2/examPaper.json");
+                    URL url=new URL("http://192.168.58.1/examPaper.json");
                     connection=(HttpURLConnection)url.openConnection();
                     connection.setRequestMethod("GET");
                     connection.setConnectTimeout(10000);
@@ -106,8 +106,8 @@ public class ShopFragment extends Fragment {
 
                 paperList.add(examPaper);
 
-                Log.d("StudyPager2","name : "+examPaper.getTitle());
-                Log.d("StudyPager2","read times : "+String.valueOf(examPaper.getPrice()));
+                Log.d("StudyPager2","title : "+examPaper.getTitle());
+                Log.d("StudyPager2","price : "+String.valueOf(examPaper.getPrice()));
 
             }
         }catch (Exception e){
@@ -115,7 +115,4 @@ public class ShopFragment extends Fragment {
         }
     }
 
-    public void changeAmmountofPaper(){
-
-    }
 }

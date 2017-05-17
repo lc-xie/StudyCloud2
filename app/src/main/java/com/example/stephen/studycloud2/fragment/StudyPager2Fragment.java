@@ -79,7 +79,7 @@ public class StudyPager2Fragment extends Fragment {
                 HttpURLConnection connection =null;
                 BufferedReader reader=null;
                 try{
-                    URL url=new URL("http://10.0.2.2/strategy.json");
+                    URL url=new URL("http://192.168.58.1/strategy.json");
                     connection=(HttpURLConnection)url.openConnection();
                     connection.setRequestMethod("GET");
                     connection.setConnectTimeout(10000);
